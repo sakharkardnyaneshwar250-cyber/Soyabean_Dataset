@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soybean Disease Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Screenshot Library -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1b5e20, #66bb6a);
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        button:hover {
+            background: #1b5e20;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        #loading {
+            display: none;
+            margin-top: 15px;
+        }
+
+        .spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #2e7d32;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    </style>
+
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function(){
+                const output = document.getElementById('preview');
+                output.src = reader.result;
+                output.style.display = "block";
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+
+        function showLoading(){
+            document.getElementById("loading").style.display = "block";
+        }
+
+        function toggleLanguage() {
+            const en = document.getElementById("english");
+            const mr = document.getElementById("marathi");
+
+            if (en.style.display === "none") {
+                en.style.display = "block";
+                mr.style.display = "none";
+            } else {
+                en.style.display = "none";
+                mr.style.display = "block";
+            }
+        }
+
+        function downloadScreenshot(){
+            html2canvas(document.querySelector(".card")).then(canvas => {
+                const link = document.createElement("a");
+                link.download = "soybean_result.png";
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>🌱 Soybean Disease Detection System</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" onchange="previewImage(event)" required>
+        <br>
+        <img id="preview" style="display:none;">
+        <br><br>
+        <button type="submit" onclick="showLoading()">Predict</button>
+
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Processing... Please wait</p>
+        </div>
+    </form>
+
+    {% if disease %}
+    <div class="card">
+        <h3>Disease: {{ disease }}</h3>
+        <h4>Confidence: {{ confidence }}%</h4>
+
+        <button onclick="toggleLanguage()">Toggle Language</button>
+        <button onclick="downloadScreenshot()">Download Screenshot</button>
+
+        <div id="english">
+            <h4>Medicine: {{ info.medicine_en }}</h4>
+            <p>Dose: {{ info.dose_en }}</p>
+            <p>{{ info.advice_en }}</p>
+        </div>
+
+        <div id="marathi" style="display:none;">
+            <h4>औषध: {{ info.medicine_mr }}</h4>
+            <p>डोस: {{ info.dose_mr }}</p>
+            <p>{{ info.advice_mr }}</p>
+        </div>
+
+        {% if voice %}
+        <audio controls>
+            <source src="{{ url_for('static', filename='voice.mp3') }}" type="audio/mp3">
+        </audio>
+        {% endif %}
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
