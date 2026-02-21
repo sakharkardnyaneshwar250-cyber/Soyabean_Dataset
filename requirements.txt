@@ -1,7 +1,6 @@
 flask==3.0.0
 numpy==1.26.4
 tensorflow==2.15.0
-keras==2.15.0
 pillow
 reportlab
 gtts
