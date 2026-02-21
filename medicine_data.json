@@ -1,0 +1,118 @@
+{
+  "Caterpillar": {
+    "medicine_en": "Emamectin Benzoate 5% SG",
+    "medicine_mr": "इमामेक्टिन बेंझोएट ५% एसजी",
+    "dose_en": "0.4 gm per litre",
+    "dose_mr": "०.४ ग्रॅम प्रति लिटर पाणी",
+    "advice_en": "Spray every 7–10 days. Remove heavily damaged leaves. Avoid late irrigation.",
+    "advice_mr": "७–१० दिवसांनी फवारणी करा. जास्त नुकसान झालेली पाने काढा. उशिरा पाणी देणे टाळा."
+  },
+
+  "bacterial_blight": {
+    "medicine_en": "Streptocycline",
+    "medicine_mr": "स्ट्रेप्टोसायक्लिन",
+    "dose_en": "0.5 gm per 10 litre",
+    "dose_mr": "०.५ ग्रॅम प्रति १० लिटर पाणी",
+    "advice_en": "Spray every 7–10 days. Avoid water stagnation. Remove infected leaves.",
+    "advice_mr": "७–१० दिवसांनी फवारणी करा. पाणी साचू देऊ नका. बाधित पाने काढा."
+  },
+
+  "septoria": {
+    "medicine_en": "Azoxystrobin 23% SC",
+    "medicine_mr": "अझॉक्सीस्ट्रोबिन २३% एससी",
+    "dose_en": "1 ml per litre",
+    "dose_mr": "१ मि.ली. प्रति लिटर पाणी",
+    "advice_en": "Spray at 10 day interval. Maintain good air circulation.",
+    "advice_mr": "१० दिवसांच्या अंतराने फवारणी करा. शेत हवेशीर ठेवा."
+  },
+
+  "powdery_mildew": {
+    "medicine_en": "Hexaconazole 5% EC",
+    "medicine_mr": "हेक्साकोनाझोल ५% ईसी",
+    "dose_en": "1 ml per litre",
+    "dose_mr": "१ मि.ली. प्रति लिटर पाणी",
+    "advice_en": "Spray immediately after detection. Avoid high humidity.",
+    "advice_mr": "लक्षण दिसताच फवारणी करा. जास्त आर्द्रता टाळा."
+  },
+
+  "soyabean_rust_ferrugen": {
+    "medicine_en": "Propiconazole 25% EC",
+    "medicine_mr": "प्रोपिकोनाझोल २५% ईसी",
+    "dose_en": "1 ml per litre",
+    "dose_mr": "१ मि.ली. प्रति लिटर पाणी",
+    "advice_en": "Spray immediately after detection. Repeat after 10 days if needed.",
+    "advice_mr": "लक्षण दिसताच फवारणी करा. गरज असल्यास १० दिवसांनी पुन्हा फवारणी करा."
+  },
+
+  "Southern_blight": {
+    "medicine_en": "Tebuconazole 25% EC",
+    "medicine_mr": "टेबुकोनाझोल २५% ईसी",
+    "dose_en": "1 ml per litre",
+    "dose_mr": "१ मि.ली. प्रति लिटर पाणी",
+    "advice_en": "Improve soil drainage. Avoid excess irrigation.",
+    "advice_mr": "जमिनीचा निचरा सुधारावा. जास्त पाणी देणे टाळा."
+  },
+
+  "brown_spot": {
+    "medicine_en": "Mancozeb 75% WP",
+    "medicine_mr": "मॅन्कोझेब ७५% डब्ल्यूपी",
+    "dose_en": "2 gm per litre",
+    "dose_mr": "२ ग्रॅम प्रति लिटर पाणी",
+    "advice_en": "Spray at early stage. Maintain field hygiene.",
+    "advice_mr": "लवकर टप्प्यात फवारणी करा. शेत स्वच्छ ठेवा."
+  },
+
+  "Yellow_Mosaic": {
+    "medicine_en": "Thiamethoxam 25% WG",
+    "medicine_mr": "थायमेथॉक्साम २५% डब्ल्यूजी",
+    "dose_en": "0.25 gm per litre",
+    "dose_mr": "०.२५ ग्रॅम प्रति लिटर पाणी",
+    "advice_en": "Control whiteflies. Spray every 10 days if required.",
+    "advice_mr": "पांढरी माशी नियंत्रण करा. गरज असल्यास १० दिवसांनी फवारणी करा."
+  },
+
+  "Sudden_Death_Syndrome": {
+    "medicine_en": "Carbendazim 50% WP",
+    "medicine_mr": "कार्बेन्डाझिम ५०% डब्ल्यूपी",
+    "dose_en": "1 gm per litre",
+    "dose_mr": "१ ग्रॅम प्रति लिटर पाणी",
+    "advice_en": "Ensure proper drainage. Avoid continuous soybean cropping.",
+    "advice_mr": "जमिनीचा निचरा योग्य ठेवा. सतत सोयाबीन पिक घेणे टाळा."
+  },
+
+  "Diabrotica_speciosa": {
+    "medicine_en": "Chlorpyrifos 20% EC",
+    "medicine_mr": "क्लोरपायरीफॉस २०% ईसी",
+    "dose_en": "2 ml per litre",
+    "dose_mr": "२ मि.ली. प्रति लिटर पाणी",
+    "advice_en": "Spray during early infestation stage.",
+    "advice_mr": "प्रारंभिक टप्प्यात फवारणी करा."
+  },
+
+  "crestamento": {
+    "medicine_en": "Copper Oxychloride 50% WP",
+    "medicine_mr": "कॉपर ऑक्सीक्लोराइड ५०% डब्ल्यूपी",
+    "dose_en": "2.5 gm per litre",
+    "dose_mr": "२.५ ग्रॅम प्रति लिटर पाणी",
+    "advice_en": "Spray during early symptoms. Avoid water logging.",
+    "advice_mr": "लक्षण दिसताच फवारणी करा. पाणी साचू देऊ नका."
+  },
+
+  "Healthy": {
+    "medicine_en": "No medicine required",
+    "medicine_mr": "औषधाची गरज नाही",
+    "dose_en": "Maintain balanced nutrition",
+    "dose_mr": "संतुलित खत वापरा",
+    "advice_en": "Maintain proper irrigation and crop rotation.",
+    "advice_mr": "योग्य पाणी व्यवस्थापन व पीक फेरपालट करा."
+  },
+
+  "Mosaic_Virus": {
+    "medicine_en": "Imidacloprid 17.8% SL",
+    "medicine_mr": "इमिडाक्लोप्रिड १७.८% एसएल",
+    "dose_en": "0.3 ml per litre",
+    "dose_mr": "०.३ मि.ली. प्रति लिटर पाणी",
+    "advice_en": "Control aphids immediately. Spray every 10 days if needed.",
+    "advice_mr": "मावा नियंत्रण त्वरित करा. गरज असल्यास १० दिवसांनी फवारणी करा."
+  }
+}
