@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-import tensorflow as tf
-from tensorflow.keras.models import load_model
+from tf.keras.models.load_model("soybean_model.h5", compile=False)
 import numpy as np
 from PIL import Image
 import json
@@ -62,3 +61,4 @@ def predict():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+
